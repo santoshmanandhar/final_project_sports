@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New News"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:gravity="left"
+        android:padding="16dp"/>
+
+    <!-- News Image URL CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_border"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/editTextNewsImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="News Image URL"
+            android:background="@android:color/transparent"
+            android:padding="8dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- News Title CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_border"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/editTextNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="News Title"
+            android:lines="3"
+
+            android:background="@android:color/transparent"
+            android:padding="8dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- News Description CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_border"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/editTextNewsDescription"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:hint="News Description"
+            android:padding="8dp"
+            android:gravity="start|center"
+            android:background="@android:color/transparent"
+            android:lines="6"
+            android:scrollbars="vertical"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/news_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+            android:text="Cancel"/>
+
+        <TextView
+            android:id="@+id/news_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:text="Add"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
